@@ -1,0 +1,201 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2026-11-24T10:24:25.801Z",
+  "__export_source": "mvc-generator",
+  "resources": [
+    {
+      "_id": "wrk_mvc_generator",
+      "_type": "workspace",
+      "name": "gestao_consumo API",
+      "description": "Requisições CRUD geradas pelo MVC Generator",
+      "scope": "collection"
+    },
+    {
+      "_id": "fld_usuario",
+      "_type": "request_group",
+      "parentId": "wrk_mvc_generator",
+      "name": "usuario",
+      "description": "CRUD da tabela usuario",
+      "environment": {},
+      "metaSortKey": 2
+    },
+    {
+      "_id": "req_usuario_3",
+      "_type": "request",
+      "parentId": "fld_usuario",
+      "name": "Listar todos",
+      "method": "GET",
+      "url": "http://localhost:3000/api/usuario",
+      "body": {},
+      "headers": [],
+      "parameters": [],
+      "authentication": {},
+      "metaSortKey": 3,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false
+    },
+    {
+      "_id": "req_usuario_4",
+      "_type": "request",
+      "parentId": "fld_usuario",
+      "name": "Cadastrar",
+      "method": "POST",
+      "url": "http://localhost:3000/api/usuario",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"Exemplo de nome\",\n  \"email\": \"Exemplo de email\",\n  \"senha\": \"Exemplo de senha\"\n}"
+      },
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "parameters": [],
+      "authentication": {},
+      "metaSortKey": 4,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false
+    },
+    {
+      "_id": "req_usuario_5",
+      "_type": "request",
+      "parentId": "fld_usuario",
+      "name": "Atualizar",
+      "method": "PUT",
+      "url": "http://localhost:3000/api/usuario/1",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"Exemplo de nome\",\n  \"email\": \"Exemplo de email\",\n  \"senha\": \"Exemplo de senha\"\n}"
+      },
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "parameters": [],
+      "authentication": {},
+      "metaSortKey": 5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false
+    },
+    {
+      "_id": "req_usuario_6",
+      "_type": "request",
+      "parentId": "fld_usuario",
+      "name": "Excluir",
+      "method": "DELETE",
+      "url": "http://localhost:3000/api/usuario/1",
+      "body": {},
+      "headers": [],
+      "parameters": [],
+      "authentication": {},
+      "metaSortKey": 6,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false
+    },
+    {
+      "_id": "fld_consumo",
+      "_type": "request_group",
+      "parentId": "wrk_mvc_generator",
+      "name": "consumo",
+      "description": "CRUD da tabela consumo",
+      "environment": {},
+      "metaSortKey": 7
+    },
+    {
+      "_id": "req_consumo_8",
+      "_type": "request",
+      "parentId": "fld_consumo",
+      "name": "Listar todos",
+      "method": "GET",
+      "url": "http://localhost:3000/api/consumo",
+      "body": {},
+      "headers": [],
+      "parameters": [],
+      "authentication": {},
+      "metaSortKey": 8,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false
+    },
+    {
+      "_id": "req_consumo_9",
+      "_type": "request",
+      "parentId": "fld_consumo",
+      "name": "Cadastrar",
+      "method": "POST",
+      "url": "http://localhost:3000/api/consumo",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"usuarioId\": 1,\n  \"local\": \"Exemplo de local\",\n  \"equipamento\": \"Exemplo de equipamento\",\n  \"consumoKwh\": 1,\n  \"mesReferencia\": \"Exemplo de mesReferencia\",\n  \"status\": \"Exemplo de status\"\n}"
+      },
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "parameters": [],
+      "authentication": {},
+      "metaSortKey": 9,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false
+    },
+    {
+      "_id": "req_consumo_10",
+      "_type": "request",
+      "parentId": "fld_consumo",
+      "name": "Atualizar",
+      "method": "PUT",
+      "url": "http://localhost:3000/api/consumo/1",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"usuarioId\": 1,\n  \"local\": \"Exemplo de local\",\n  \"equipamento\": \"Exemplo de equipamento\",\n  \"consumoKwh\": 1,\n  \"mesReferencia\": \"Exemplo de mesReferencia\",\n  \"status\": \"Exemplo de status\"\n}"
+      },
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "parameters": [],
+      "authentication": {},
+      "metaSortKey": 10,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false
+    },
+    {
+      "_id": "req_consumo_11",
+      "_type": "request",
+      "parentId": "fld_consumo",
+      "name": "Excluir",
+      "method": "DELETE",
+      "url": "http://localhost:3000/api/consumo/1",
+      "body": {},
+      "headers": [],
+      "parameters": [],
+      "authentication": {},
+      "metaSortKey": 11,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false
+    }
+  ]
+}
